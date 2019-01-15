@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "VUE_CLI_CSS_SHADOW_MODE=true vue-cli-service build --target wc --name hello-world ./src/wc.ts",
+    "build:app": "vue-cli-service build"
   },
   "dependencies": {
     "vue": "^2.5.21"
@@ -12,6 +13,7 @@
   "devDependencies": {
     "@vue/cli-plugin-typescript": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
+    "@vue/web-component-wrapper": "^1.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "typescript": "^3.0.0",
